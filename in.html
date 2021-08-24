@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="st.css" />
+    <title>Document</title>
+</head>
+<body>
+    <section class="Cart-Container">
+        <nav>
+          <div class="navb">
+            <h1 class="shopping">shopping card</h1>
+           
+          </div>
+        </nav>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            <div class="cart-row" id="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="https://www.arvea-nature.tn/wp-content/uploads/body-fruit-combo.jpg" >
+                    <span class="cart-item-title">body splash queen flower</span>
+                </div>
+                <span class="cart-price cart-column">29.800dt</span>
+                <div class="cart-quantity cart-column" >
+                    <input class="cart-quantity-input" type="number" value="0" min="0" onclick="quantityChanged(event)">
+                    <button class="btn btn-danger" type="button" onclick="removeCartItem(event)">REMOVE</button>
+                  </div> 
+            </div>
+
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="http://tn.arvea-nature.com/end/uploads/images/product/17361341_10207104464049816_1735758805_n.jpg" >
+                    <span class="cart-item-title">gentleman by arvea</span>
+                </div>
+                <span class="cart-price cart-column">55.000DT</span>
+                <div class="cart-quantity cart-column"  >
+                    <input class="cart-quantity-input" type="number" value="0" min="0" onclick="quantityChanged(event)">
+                    <button class="btn btn-danger"  type="button" onclick="removeCartItem(event)">REMOVE</button>
+                </div>
+            </div>
+
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="http://tn.arvea-nature.com/end/uploads/images/product/floral%20fresh.jpg" >
+                    <span class="cart-item-title">DÉODORANT FLORAL FRESH</span>
+                </div>
+                <span class="cart-price cart-column">19.800dt</span>
+                <div class="cart-quantity cart-column"  >
+                    <input class="cart-quantity-input" type="number" value="0" min="0" onclick="quantityChanged(event)">
+                    <button class="btn btn-danger" type="button"  onclick="removeCartItem(event)">REMOVE</button>
+                </div>
+            </div>
+
+           
+            
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="http://tn.arvea-nature.com/end/uploads/images/product/apres-rasage.jpg"> 
+                    <span class="cart-item-title">APRÈS RASAGESoins Pour Le Visage</span>
+                </div>
+                <span class="cart-price cart-column">13.800dt</span>
+                <div class="cart-quantity cart-column"  >
+                    <input class="cart-quantity-input" type="number" value="0" min="0" onclick="quantityChanged(event)">
+                    <button class="btn btn-danger" type="button"  onclick="removeCartItem(event)">REMOVE</button>
+                </div>
+            </div>
+
+            <div class="cart-row"  >
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="http://tn.arvea-nature.com/end/uploads/images/product/%C3%A9cran-total.jpg"> 
+                    <span class="cart-item-title">ECRAN SPF 50+</span>
+                </div>
+                <span class="cart-price cart-column">32.800dt</span>
+                <div class="cart-quantity cart-column"  >
+                    <input class="cart-quantity-input" type="number" value="0" min="" onclick="quantityChanged(event)">
+                    <button class="btn btn-danger" type="button " onclick="removeCartItem(event)">REMOVE</button>
+                </div>
+            </div>
+
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="http://tn.arvea-nature.com/end/uploads/images/product/SPICY.jpg"> 
+                    <span class="cart-item-title"> GEL DOUCHE SPICY</span>
+                </div>
+                <span class="cart-price cart-column">13.800dt</span>
+                <div class="cart-quantity cart-column"  >
+                    <input class="cart-quantity-input"   onclick="quantityChanged(event)" type="number" value="0"  min="1">
+                    <button class="btn btn-danger" type="button"  onclick="removeCartItem(event)">REMOVE</button>
+                </div>
+            </div>
+
+           
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price"  onclick=" updateCartTotal()"> 0 dt</span>
+            
+        </div>
+
+    </section>
+    <script src="js.js"></script>
+    
+    
+</body>
+
+</html>
